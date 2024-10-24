@@ -1,8 +1,8 @@
 <div class="container featurette">
 
   <div class="col-12 text-center mb-4 ">
-    <h2 class="featurette-heading fw-normal lh-1 text-white">Our Comic Book Collections</h2>
-    <p class="lead text-white">Discover a wide range of comics from various genres and publishers.</p>
+    <h2 class="featurette-heading fw-normal lh-1 text-white">BUYING VINTAGE PRE-1980 COMICS</h2>
+    <p class="lead text-white">Own vintage comics from before 1980? We’re paying top dollar for your collection.</p>
   </div>
 
   <div class="row justify-content-center">
@@ -50,38 +50,38 @@
   <!-- New Section 2: Coins -->
   <div class="row featurette mb-5">
     <div class="col-md-6 m-auto">
-      <h2 class="featurette-heading text-white">Rare Coins for Collectors</h2>
-      <p class="lead text-white">Check out our collection of rare coins with historical significance.</p>
-      <br>
+      <h2 class="featurette-heading text-white">BUYING PRE-1964 GOLD & SILVER COINS</h2>
+      <p class="lead text-white">Cash in on your pre-1964 gold and silver coins—get a great offer today.</p>
+      <!-- <br>
       <h2 class="featurette-heading text-white">Explore Our Stamp Collection</h2>
-      <p class="lead text-white">Discover a wide array of vintage and rare stamps from around the world.</p>
+      <p class="lead text-white">Discover a wide array of vintage and rare stamps from around the world.</p> -->
     </div>
 
 
     <div class="col-md-6 m-auto">
-      <img src="assets/coins.jpg" alt="Coins" class="img-fluid image-frame">
+      <img src="assets/coins-cutout.png" alt="Coins" class="img-fluid">
     </div>
   </div>
 
   <!-- New Section 3: Records -->
   <div class="row featurette mb-5">
     <div class="col-md-6 order-md-2 m-auto">
-      <h2 class="featurette-heading text-white">Vinyl Records for Music Lovers</h2>
-      <p class="lead text-white">From classics to rare finds, explore our wide range of records.</p>
+      <h2 class="featurette-heading text-white">WE BUY RECORDS (1950s-80s - LPs & 45s)</h2>
+      <p class="lead text-white">Have records from the 1950s-80s? Sell your LPs and 45s to us.</p>
     </div>
     <div class="col-md-6 order-md-1">
-      <img src="assets/records.jpg" alt="Records" class="img-fluid image-frame">
+      <img src="assets/records-cutout.png" alt="Records" class="img-fluid image-frame">
     </div>
   </div>
 
   <!-- New Section 4: Pokemon -->
   <div class="row featurette mb-5">
     <div class="col-md-6 m-auto">
-      <h2 class="featurette-heading text-white">Pokemon Card Collection</h2>
-      <p class="lead text-white">Gotta catch 'em all! Browse through our extensive collection of Pokemon cards.</p>
-      <br>
+      <h2 class="featurette-heading text-white">BUYING POKEMON & EXCLUSIVE SPORTS CARDS</h2>
+      <p class="lead text-white">Looking to sell your Pokémon or exclusive sports cards? We’re ready to buy!</p>
+      <!-- <br>
       <h2 class="featurette-heading text-white">Exclusive Sports Cards</h2>
-      <p class="lead text-white">Find your favorite sports cards, featuring the best players from across the world.</p>
+      <p class="lead text-white">Find your favorite sports cards, featuring the best players from across the world.</p> -->
     </div>
     <div class="col-md-6">
       <img src="assets/cards1.jpg" alt="Pokemon Cards" class="img-fluid image-frame">
@@ -91,22 +91,22 @@
   <!-- New Section 5: One Piece -->
   <div class="row featurette mb-5">
     <div class="col-md-6 order-md-2 m-auto">
-      <h2 class="featurette-heading text-white">One Piece Merchandise</h2>
-      <p class="lead text-white">Join Luffy and the Straw Hat Pirates in this fantastic collection of One Piece merchandise.</p>
+      <h2 class="featurette-heading text-white">BUYING ONE PIECE MERCHANDISE</h2>
+      <p class="lead text-white">Turn your One Piece collectibles into cash—we're buying authentic items now.</p>
     </div>
     <div class="col-md-6 order-md-1">
-      <img src="assets/store6.jpg" alt="One Piece" class="img-fluid image-frame">
+      <img src="assets/one-piece.png" alt="One Piece" class="img-fluid">
     </div>
   </div>
 
   <!-- New Section 7: Model Trains -->
   <div class="row featurette mb-5">
     <div class="col-md-6 order-md-1 m-auto">
-      <h2 class="featurette-heading text-white">Model Trains for Enthusiasts</h2>
-      <p class="lead text-white">Discover our meticulously curated collection of model trains.</p>
+      <h2 class="featurette-heading text-white">BUYING MODEL TRAINS</h2>
+      <p class="lead text-white">Sell your model trains to us—vintage and modern, all scales and conditions.</p>
     </div>
     <div class="col-md-6 order-md-2">
-      <img src="assets/trains.jpg" alt="Model Trains" class="img-fluid image-frame">
+      <img src="assets/model-trains.png" alt="Model Trains" class="img-fluid">
     </div>
   </div>
   <div class="row featurette mb-5">
@@ -117,8 +117,8 @@
     <div class="row justify-content-center mb-5">
       <div class="col-md-8 text-left content-center">
         <div class="col-12 text-center mb-4">
-          <h2 class="featurette-heading fw-normal lh-1 text-white">More Collectibles</h2>
-          <p class="lead text-white">We buy, sell, and auction all items listen below.</p>
+          <h2 class="featurette-heading fw-normal lh-1 text-white">More...</h2>
+          <p class="lead text-white">We BUY, SELL, and AUCTION all items listen below.</p>
         </div>
         <div class="row">
           <div class="col-md-6">
@@ -185,4 +185,18 @@
       </div>
     </div>
   </div>
+  <div class="gallery-container">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4" *ngFor="let image of images">
+            <div class="card">
+              <div class="card-img-wrapper">
+                <img class="card-img-top equal-img" [src]="image.src" [alt]="image.alt">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
 </div>
