@@ -20,7 +20,6 @@
 
   .text{
     padding: 100px;
-    color: white;
   }
   
   /* Optional: If you want the title to stand out more */
@@ -32,27 +31,122 @@
     margin: 5rem 0; /* Space out the Bootstrap <hr> more */
   }
 
-  .featurette{
-    padding: 50px;
-    margin: 0;
-    background-color: black;
+  .featurette {
+    padding: 2rem 0;
+    background-color: #000; // Sets the black background
+  
+    .container {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+  
+    .featurette-heading,
+    p.lead,
+    h3,
+    ul {
+      color: #fff; // Ensures the text is white and visible
+    }
+  
+    .image-frame {
+      border: 1px solid #ddd;
+      padding: 5px;
+      transition: transform 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  
+    .image-container img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+  
+    ul {
+      margin-top: 1rem;
+      padding-left: 0;
+      list-style: none;
+      
+      li {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        position: relative;
+        padding-left: 1.5rem;
+  
+        &::before {
+          content: "\2022";
+          color: #007bff;
+          font-weight: bold;
+          display: inline-block;
+          width: 1rem;
+          margin-left: -1.5rem;
+        }
+      }
+    }
+  
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .col-6 {
+      max-width: 100%;
+    }
+
+    .image-container {
+      position: relative;
+      width: 100%;
+      height: 300px; /* Set a fixed height for all images */
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      height: 300px; /* Set a fixed height for all images */
+    }
+  
+    @media (min-width: 768px) {
+      .col-md-3 {
+        max-width: 25%;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .col-6 {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+  
+      .mb-4 {
+        margin-bottom: 1rem !important;
+      }
+
+    }
   }
+  
+  
 
   .truck-image {
     width: 100%; /* Make width responsive */
     height: 0; /* Set height to 0 */
     padding-top: 100%; /* Padding top as a percentage of the width to maintain aspect ratio */
-    background-image: url('../../assets/rolls-royce.jpg');
+    background-image: url('../../assets/default.jpg');
     background-size: cover; /* Ensures the background image covers the entire content area */
     background-position: center; /* Center the image within the element */
     background-repeat: no-repeat; /* Prevent the image from repeating */
   }
+
+  .white{
+    background-color: white;
+    color: black;
+  }
   
   /* Media query adjustments for better responsiveness */
   @media (max-width: 1024px) {
-    .featurette {
-      display: block;
-    }
+
     
     .text, .image {
       width: 100%; /* Full width for smaller screens */
@@ -67,8 +161,9 @@
   }
   
   @media (max-width: 768px) {
-    .truck-image {
-      padding-top: 75%; /* Adjust padding-top to maintain a good aspect ratio on very small screens */
+    .featurette {
+      display: block;
+      text-align: center;
     }
   }
   
@@ -85,12 +180,6 @@
     display: inline-block;
   }
   
-  .image-container {
-    position: relative;
-    background-color: #000; /* Black background around the image */
-    padding: 20px; /* Adds the black frame padding around the image */
-    z-index: 1;
-  }
   
   .image-container img {
     display: block;
