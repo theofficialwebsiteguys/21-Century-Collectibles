@@ -65,3 +65,32 @@ h1, h2, p {
   cursor: pointer;
 }
 
+
+/* Ensures 'Store Hours' line stays together */
+.nowrap {
+  white-space: nowrap;
+}
+
+/* Adjust text and padding for smaller screens */
+@media (max-width: 768px) {
+ .hero-content h5 {
+    font-size: 1rem; /* Adjust to keep content grouped */
+  }
+}
+
+/* Default styling (Desktop) */
+.contact-info .separator {
+  display: inline; /* Shows the separator on larger screens */
+}
+
+/* Mobile styling */
+@media (max-width: 768px) {
+  .contact-info .separator {
+    display: none; /* Hides the separator on mobile */
+  }
+
+  .contact-info .toll-free {
+    display: block; /* Moves 'TOLL FREE' to a new line on mobile */
+    margin-top: 5px; /* Optional: add spacing if needed */
+  }
+}
